@@ -16,5 +16,5 @@ def inc_count():
 ds.button("Click", on_click=inc_count)
 ds.write("counts: " + str(count))
 
-code = "ds.button('dynamic text')"
+code = "ds.button('dynamic text',on_click=inc_count)"
 exec_code(code)
